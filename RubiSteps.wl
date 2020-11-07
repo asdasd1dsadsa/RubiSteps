@@ -136,7 +136,7 @@ ReplaceGeneratedSymbol[input_, toBeReplace_, appearedSymbols_, method_] := Switc
 
 ExtractSubstitutionInformation[steps_List] := With[{substRules = Cases[#, NewSubstitution[_, src_, tar_] :> {src, tar}, Infinity]},
 	SubstitutionInformation[# //. (NewSubstitution|OldSubstitution)[expr_, _, _] :> expr, substRules]
-] & /@ steps //DeleteDuplicates
+] & /@ steps
 
 
 RiffleTeXForm[header_][steps_] := StringRiffle[{"\\begin{aligned}",
@@ -217,13 +217,13 @@ ShowIntSteps[Rubi`Int[expr_, var_Symbol], OptionsPattern[]] := Module[{
 	]
 ] // (* Convert to some form *) Switch[OptionValue@FormatType,
 	InputForm|"Original"|None|False,
-		ReplaceAll[#, NewSubstitution|OldSubstitution :> Rubi`Subst] &,
+		DeleteDuplicates@ReplaceAll[#, NewSubstitution|OldSubstitution :> Rubi`Subst] &,
 	StandardForm|"Replaced"|Automatic|True,
-		replaceDistAndInt@*ExtractSubstitutionInformation,
+		replaceDistAndInt@*DeleteDuplicates@*ExtractSubstitutionInformation,
 	TraditionalForm|"Traditional"|"TraditionalForm",
-		TraditionalForm /@ ExtractSubstitutionInformation@# &,
+		TraditionalForm /@ DeleteDuplicates@ExtractSubstitutionInformation@# &,
 	TeXForm|"TeX"|"TeXForm",
-		RiffleTeXForm[HoldForm@Rubi`Int[expr, var]]@*ExtractSubstitutionInformation
+		RiffleTeXForm[HoldForm@Rubi`Int[expr, var]]@*DeleteDuplicates@*ExtractSubstitutionInformation
 ]
 ] ] ]
 
