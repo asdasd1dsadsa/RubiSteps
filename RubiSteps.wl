@@ -31,10 +31,10 @@ ClearAll@"`*"
 (*Definition*)
 
 
-ShowIntSteps::usage = "ShowIntSteps[Int[\!\(\*StyleBox[\"expr\",FontSlant->\"Italic\"]\), \!\(\*StyleBox[\"var\",FontSlant->\"Italic\"]\)], \!\(\*StyleBox[\"opts\",FontSlant->\"Italic\"]\)]\n\rUse ShowIntSteps[\"OptionList\"] to see the list of option keys and values."
+ShowIntSteps::usage = "ShowIntSteps[Int[\!\(\*StyleBox[\"expr\", \"TI\"]\), \!\(\*StyleBox[\"var\", \"TI\"]\)], \!\(\*StyleBox[\"opts\", \"TI\"]\)]\n\rUse ShowIntSteps[\"OptionList\"] to see the list of option keys and values."
 
 
-RiffleTeXForm::usage = "RiffleTeXForm[\!\(\*StyleBox[\"header\",FontSlant->\"Italic\"]\)][\!\(\*StyleBox[\"list\",FontSlant->\"Italic\"]\)] constructs an aligned equation."
+RiffleTeXForm::usage = "RiffleTeXForm[\!\(\*StyleBox[\"header\", \"TI\"]\)][\!\(\*StyleBox[\"list\", \"TI\"]\)] constructs an aligned equation."
 
 
 SubstitutionInformation::usage = "SubstitutionInformation represents substitution rules for expressions. SubstitutionInformation is also an option of ShowIntSteps."
@@ -255,3 +255,25 @@ End[]
 
 
 EndPackage[]
+
+
+(* ::Chapter:: *)
+(*Modification*)
+
+
+#=.&@*First /@ FormatValues@Rubi`Dist;
+MakeBoxes[HoldPattern@Rubi`Dist[l_, int_Rubi`Int, _], form:TraditionalForm] ^:= RowBox@{MakeBoxes[l, form], MakeBoxes[int, form]};
+MakeBoxes[HoldPattern@Rubi`Dist[l_, r_, _], form_] ^:= MakeBoxes[Times[l, r], form]
+
+
+#=.&@*First /@ FormatValues@Rubi`Subst;
+MakeBoxes[HoldPattern@Rubi`Subst[expr_, key_, val_], form:TraditionalForm] ^:= RowBox@{
+	UnderscriptBox["Subs", 
+		RowBox@{
+			MakeBoxes[key, form], "\[RightArrow]", MakeBoxes[val, form]
+		}
+	],
+	RowBox@{
+		"(", MakeBoxes[expr, form], ")"
+	}
+}
