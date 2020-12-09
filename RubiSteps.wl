@@ -196,7 +196,7 @@ ShowIntSteps[Rubi`Int[expr_, var_Symbol], OptionsPattern[]] := Module[{
 		_, (* Includes `Automatic|"SingleLetter"` *)
 			(AppendTo[generatedUniqueSymbols, #];#)&@Unique[tmp] &
 	]
-}, Block[{Rubi`Private`$ShowSteps = True}, 
+}, Block[{Rubi`Private`$ShowSteps = True},
 	(* Evaluation *)
 	Reap[
 		FixedPoint[ (* Do not perform substitution until there's no other evaluation can be performed. *)
