@@ -1,0 +1,1 @@
+PacletSite[Paclet["Name" -> "RubiSteps", "Version" -> "0.0.1", "WolframVersion" -> "12.2+", "Description" -> "Enhancement for Rubi steps.", "Root" -> ".", "Loading" -> "Manual", "Extensions" -> {{"Kernel", "Root" -> ".", "Context" -> "RubiSteps`"}}]]
