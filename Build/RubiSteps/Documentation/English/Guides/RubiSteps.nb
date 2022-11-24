@@ -1,0 +1,333 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     12488,        323]
+NotebookOptionsPosition[      9920,        267]
+NotebookOutlinePosition[     11519,        307]
+CellTagsIndexPosition[     11476,        304]
+WindowTitle->RubiSteps
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {GridBox[{
+      {
+       ItemBox[Cell[BoxData[
+         RowBox[{
+          TemplateBox[{12},
+           "Spacer1"], Cell["RUBI STEPS GUIDE", "PacletNameCell",
+           TextAlignment->Center,ExpressionUUID->
+           "52884f6f-a1c7-47cb-8c97-423ef756db4c"], 
+          TemplateBox[{8},
+           "Spacer1"]}]],
+         TextAlignment->Center,ExpressionUUID->
+         "69b7beed-6b8b-4113-905b-5bdbc9dee7b5"],
+        Background->RGBColor[0.85098, 0.396078, 0],
+        ItemSize->Full], ""}
+     },
+     GridBoxAlignment->{"Rows" -> {{Center}}},
+     GridBoxItemSize->{"Columns" -> {Full, 
+         Scaled[0.02]}, "Rows" -> {{2.5}}}], Cell[TextData[{
+     Cell[BoxData[
+      TagBox[
+       ActionMenuBox[
+        FrameBox[Cell[TextData[{
+          "Functions",
+          " ",
+          Cell[BoxData[
+           GraphicsBox[
+            {GrayLevel[0.66667], Thickness[0.13], 
+             LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+            AspectRatio->1,
+            ImageSize->20,
+            PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+           "f65f2e10-ffcd-496e-88ef-a2e4ba64ba29"]
+         }],ExpressionUUID->"b045179b-9b56-4545-a0dc-dc3a7133fa84"],
+         StripOnInput->False], {"\<\"ShowIntSteps\"\>":>
+        Documentation`HelpLookup[
+        "paclet:RubiSteps/ref/ShowIntSteps"], "\<\"TeXIntSteps\"\>":>
+        Documentation`HelpLookup["paclet:RubiSteps/ref/TeXIntSteps"]},
+        Appearance->None,
+        MenuAppearance->Automatic,
+        MenuStyle->"GuideFunction"],
+       MouseAppearanceTag["LinkHand"]]],
+      LineSpacing->{1.4, 0},ExpressionUUID->
+      "5a920002-af50-4007-95d9-a521d416bd13"],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      TagBox[
+       ActionMenuBox[
+        FrameBox[Cell[TextData[{
+          "URL",
+          " ",
+          Cell[BoxData[
+           GraphicsBox[
+            {GrayLevel[0.66667], Thickness[0.13], 
+             LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+            AspectRatio->1,
+            ImageSize->20,
+            PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+           "abe86772-88a7-4802-945b-d55fe428b161"]
+         }],ExpressionUUID->"a00c8d90-d1ae-42be-9b01-2a0e3f8b0481"],
+         StripOnInput->False], {"\<\"RubiSteps/guide/RubiSteps\"\>":>
+        None, "\<\"Copy Wolfram Documentation Center URL\"\>":>
+        Module[{DocumentationSearch`Private`nb$}, 
+         DocumentationSearch`Private`nb$ = NotebookPut[
+            Notebook[{
+              Cell["RubiSteps/guide/RubiSteps"]}, Visible -> False]]; 
+         SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+         FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+         NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+        Delimiter, "\<\"Copy web URL\"\>":>
+        Module[{DocumentationSearch`Private`nb$}, 
+         DocumentationSearch`Private`nb$ = NotebookPut[
+            Notebook[{
+              Cell[
+               BoxData[
+                MakeBoxes[
+                 Hyperlink[
+                 "http://reference.wolfram.com/language/RubiSteps/guide/\
+RubiSteps.html"], StandardForm]], "Input", TextClipboardType -> "PlainText"]},
+              Visible -> False]]; 
+         SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+         FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+         NotebookClose[DocumentationSearch`Private`nb$]; 
+         Null], "\<\"Go to web URL\"\>":>FrontEndExecute[{
+          NotebookLocate[{
+            URL[If[
+               TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$102135], 
+               "http://reference.wolfram.com/system-modeler/", 
+               "http://reference.wolfram.com/language/"] <> 
+             "RubiSteps/guide/RubiSteps" <> ".html"], None}]}]},
+        Appearance->None,
+        MenuAppearance->Automatic,
+        MenuStyle->"URLMenu"],
+       MouseAppearanceTag["LinkHand"]]],
+      LineSpacing->{1.4, 0},ExpressionUUID->
+      "f6da2888-2a5c-4e9a-88a1-8c011692f82a"]
+    }], "AnchorBar",
+     CacheGraphics->False,ExpressionUUID->
+     "c78ddc14-fc47-4a1b-96b1-df5685f93c2c"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1,ExpressionUUID->"1522235d-0875-46f3-b642-a8d72d3f396b"],
+
+Cell[CellGroupData[{
+
+Cell["RubiSteps", "GuideTitle",
+ CellID->1004627921,ExpressionUUID->"3a385944-c79c-4492-848c-ccf6859eee90"],
+
+Cell[" Enhancement for Rubi steps.", "GuideAbstract",
+ CellID->566580846,ExpressionUUID->"21eda9b0-ec31-4a91-96bb-461c7e622eae"],
+
+Cell["\t", "GuideDelimiterSubsection",ExpressionUUID->"62c18ef7-64f6-40f1-9b7e-4d7578ad6c94"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Functions", "GuideFunctionsSection",
+ CellID->1815705513,ExpressionUUID->"fa7b3fbf-4ac9-45ab-adff-09f2657bc8c5"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["ShowIntSteps"]], "paclet:RubiSteps/ref/ShowIntSteps", 
+    "RubiSteps Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",ExpressionUUID->
+  "6aa09bd7-879e-4f74-9f2d-ea6b950d6515"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " Show steps of integration."
+}], "GuideText",
+ CellID->248637555,ExpressionUUID->"803abb8e-44e4-4fb2-815a-5e1fda8fd39b"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["TeXIntSteps"]], "paclet:RubiSteps/ref/TeXIntSteps", 
+    "RubiSteps Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",ExpressionUUID->
+  "04307dd0-3094-4771-b21a-c00d7f90f5ed"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " Call ",
+ StyleBox["MaTeX", "InlineCode"],
+ " for rendering steps of integration."
+}], "GuideText",
+ CellID->1796480047,ExpressionUUID->"5f778ff9-7b98-442c-8140-c09cb2da6722"]
+}, Open  ]],
+
+Cell[BoxData[GridBox[{
+   {
+    TemplateBox[{29},
+     "Spacer1"], GridBox[{
+      {
+       RowBox[{
+        TemplateBox[{17},
+         "Spacer1"], 
+        StyleBox[
+         RowBox[{"Related", " ", "Links"}], "GuideRelatedLinksSection"]}]},
+      {Cell[TextData[Cell[BoxData[
+        RowBox[{
+         TemplateBox[{16},
+          "Spacer1"], "\[FilledVerySmallSquare]", Cell[BoxData[
+          TemplateBox[{
+            Cell[
+             TextData[
+              Cell[
+               TextData[{
+                 Cell[
+                  BoxData[
+                   TemplateBox[{2}, "Spacer1"]]], 
+                 "RubiSteps Github Repository"}]]]], 
+            "https://github.com/asdasd1dsadsa/RubiSteps"},
+           "WebLink",
+           BaseStyle->{"GuideRelatedLinks"}]],ExpressionUUID->
+          "4eba9fc4-729b-4c3d-a524-424714716825"]}]],ExpressionUUID->
+        "9ea42c99-2376-4efc-9c60-9ba35665cf33"]], "GuideRelatedLinks",
+        ExpressionUUID->"fd4c2b14-9b68-4dbb-8489-c6acdf2aea4e"]},
+      {Cell[TextData[Cell[BoxData[
+        RowBox[{
+         TemplateBox[{16},
+          "Spacer1"], "\[FilledVerySmallSquare]", Cell[BoxData[
+          TemplateBox[{
+            Cell[
+             TextData[
+              Cell[
+               TextData[{
+                 Cell[
+                  BoxData[
+                   TemplateBox[{2}, "Spacer1"]]], 
+                 "Rubi Github Repository"}]]]], 
+            "https://github.com/RuleBasedIntegration/Rubi"},
+           "WebLink",
+           BaseStyle->{"GuideRelatedLinks"}]],ExpressionUUID->
+          "3f7a6115-f017-4bbb-9aa7-309d29f96db2"]}]],ExpressionUUID->
+        "8ed10fa3-3720-4f00-8ae6-9c3b821ddd8d"]], "GuideRelatedLinks",
+        ExpressionUUID->"a807f782-15d1-4e48-a30d-ec7e0de31929"]},
+      {Cell[TextData[Cell[BoxData[
+        RowBox[{
+         TemplateBox[{16},
+          "Spacer1"], "\[FilledVerySmallSquare]", Cell[BoxData[
+          TemplateBox[{
+            Cell[
+             TextData[
+              Cell[
+               TextData[{
+                 Cell[
+                  BoxData[
+                   TemplateBox[{2}, "Spacer1"]]], "Rubi Website"}]]]], 
+            "https://rulebasedintegration.org/"},
+           "WebLink",
+           BaseStyle->{"GuideRelatedLinks"}]],ExpressionUUID->
+          "8c4e73d2-1842-47bb-88b8-b1cf57cb06da"]}]],ExpressionUUID->
+        "bdf1bbf9-7205-46d0-ad2e-b2be118eeb68"]], "GuideRelatedLinks",
+        ExpressionUUID->"a43246e7-66c6-4cd4-8725-77d5fc7c70bf"]},
+      {Cell[TextData[Cell[BoxData[
+        RowBox[{
+         TemplateBox[{16},
+          "Spacer1"], "\[FilledVerySmallSquare]", Cell[BoxData[
+          TemplateBox[{
+            Cell[
+             TextData[
+              Cell[
+               TextData[{
+                 Cell[
+                  BoxData[
+                   TemplateBox[{2}, "Spacer1"]]], "MaTeX Git Repository"}]]]],
+             "https://github.com/szhorvat/MaTeX"},
+           "WebLink",
+           BaseStyle->{"GuideRelatedLinks"}]],ExpressionUUID->
+          "7e2afc6b-0fba-45cb-9ba8-9fdf3880f420"]}]],ExpressionUUID->
+        "5eeed0da-0c22-4d9f-bf61-733214a82581"]], "GuideRelatedLinks",
+        ExpressionUUID->"942d2ad0-f6f5-4ff2-ba31-5e5cac5e15ef"]}
+     }]}
+  }]], "GuideRelatedLinksSection",ExpressionUUID->"eba1e552-13cf-42b9-831e-\
+64061cda5238"],
+
+Cell[" ", "FooterCell",ExpressionUUID->"070ccda5-afee-4ff4-99f2-7b2d304347e2"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{900., 595.5},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
+WindowTitle->"RubiSteps",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "", "LinkTrails" -> "", 
+  "ExampleCounter" -> 1, 
+  "Openers" -> {
+   "PrimaryExamplesSection" -> Open, "ExampleSection" -> {"0" -> Open}}, 
+  "NewStyles" -> True, "CitationPopupData" -> {"", ""}, "ShowCitation" -> 
+  False, "RootCaptions" -> "", 
+  "Metadata" -> {
+   "built" -> "{2022, 11, 24, 11, 12, 2.050347}", 
+    "history" -> {"", "", "", ""}, "context" -> "RubiSteps`", 
+    "keywords" -> {
+     "Integration", "Integral", "Integrate", "TeX", "LaTeX", "Rubi", 
+      "RubiSteps"}, "specialkeywords" -> {}, "tutorialcollectionlinks" -> {}, 
+    "index" -> True, "label" -> "Rubi Steps Guide", "language" -> "en", 
+    "paclet" -> "RubiSteps", "status" -> "None", "summary" -> 
+    "Enhancement for Rubi steps.", "synonyms" -> {}, "tabletags" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$102101, "title" -> 
+    "RubiSteps", "titlemodifier" -> "", "windowtitle" -> "RubiSteps", "type" -> 
+    "Guide", "uri" -> "RubiSteps/guide/RubiSteps"}},
+CacheGraphics->False,
+FrontEndVersion->"13.1 for Linux x86 (64-bit) (2022\:5e746\:670816\:65e5)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "Reference.nb", 
+  CharacterEncoding -> "UTF-8"],
+ExpressionUUID->"15fcb20e-c155-4209-844e-aaee6597e4d0"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[581, 21, 4431, 105, 70, "AnchorBarGrid",ExpressionUUID->"1522235d-0875-46f3-b642-a8d72d3f396b",
+ CellID->1],
+Cell[CellGroupData[{
+Cell[5037, 130, 107, 1, 76, "GuideTitle",ExpressionUUID->"3a385944-c79c-4492-848c-ccf6859eee90",
+ CellID->1004627921],
+Cell[5147, 133, 128, 1, 49, "GuideAbstract",ExpressionUUID->"21eda9b0-ec31-4a91-96bb-461c7e622eae",
+ CellID->566580846],
+Cell[5278, 136, 93, 0, 27, "GuideDelimiterSubsection",ExpressionUUID->"62c18ef7-64f6-40f1-9b7e-4d7578ad6c94"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5408, 141, 118, 1, 73, "GuideFunctionsSection",ExpressionUUID->"fa7b3fbf-4ac9-45ab-adff-09f2657bc8c5",
+ CellID->1815705513],
+Cell[5529, 144, 466, 13, 34, "GuideText",ExpressionUUID->"803abb8e-44e4-4fb2-815a-5e1fda8fd39b",
+ CellID->248637555],
+Cell[5998, 159, 519, 15, 34, "GuideText",ExpressionUUID->"5f778ff9-7b98-442c-8140-c09cb2da6722",
+ CellID->1796480047]
+}, Open  ]],
+Cell[6532, 177, 3303, 86, 231, "GuideRelatedLinksSection",ExpressionUUID->"eba1e552-13cf-42b9-831e-64061cda5238"],
+Cell[9838, 265, 78, 0, 30, "FooterCell",ExpressionUUID->"070ccda5-afee-4ff4-99f2-7b2d304347e2"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

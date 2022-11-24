@@ -1,0 +1,390 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     14866,        380]
+NotebookOptionsPosition[     11692,        312]
+NotebookOutlinePosition[     13668,        361]
+CellTagsIndexPosition[     13625,        358]
+WindowTitle->SubstitutionInformation
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {GridBox[{
+      {
+       ItemBox[Cell[BoxData[
+         RowBox[{
+          TemplateBox[{12},
+           "Spacer1"], Cell["RUBI STEPS SYMBOL", "PacletNameCell",
+           TextAlignment->Center,ExpressionUUID->
+           "58f5f8eb-29eb-48c4-9eca-820bb2fbd0f3"], 
+          TemplateBox[{8},
+           "Spacer1"]}]],
+         TextAlignment->Center,ExpressionUUID->
+         "a06b4e40-3298-4d14-b227-c5fa2a677dfa"],
+        Background->RGBColor[0.490196, 0.576471, 0.690196],
+        ItemSize->Full], ""}
+     },
+     GridBoxAlignment->{"Rows" -> {{Center}}},
+     GridBoxItemSize->{"Columns" -> {Full, 
+         Scaled[0.02]}, "Rows" -> {{2.5}}}], Cell[TextData[{
+     Cell[BoxData[
+      TagBox[
+       ActionMenuBox[
+        FrameBox[Cell[TextData[{
+          "See Also",
+          " ",
+          Cell[BoxData[
+           GraphicsBox[
+            {GrayLevel[0.66667], Thickness[0.13], 
+             LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+            AspectRatio->1,
+            ImageSize->20,
+            PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+           "bd2cdbb7-b18a-4ed6-8c5d-80d300670ee1"]
+         }],ExpressionUUID->"49a2bf95-8d75-4bb6-b9ea-6be99d576ab0"],
+         StripOnInput->False], {"\<\"ShowIntSteps\"\>":>
+        Documentation`HelpLookup["paclet:RubiSteps/ref/ShowIntSteps"]},
+        Appearance->None,
+        MenuAppearance->Automatic,
+        MenuStyle->"SeeAlso"],
+       MouseAppearanceTag["LinkHand"]]],
+      LineSpacing->{1.4, 0},ExpressionUUID->
+      "472837ec-b15b-4cf2-87fd-cae44a3d1f5f"],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      TagBox[
+       ActionMenuBox[
+        FrameBox[Cell[TextData[{
+          "Related Guides",
+          " ",
+          Cell[BoxData[
+           GraphicsBox[
+            {GrayLevel[0.66667], Thickness[0.13], 
+             LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+            AspectRatio->1,
+            ImageSize->20,
+            PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+           "055b0c52-898a-4669-839d-d4dc66a421f7"]
+         }],ExpressionUUID->"79ce9b03-1725-4651-8002-9dc48c68755c"],
+         StripOnInput->False], {"\<\"RubiSteps\"\>":>Documentation`HelpLookup[
+        "paclet:RubiSteps/guide/RubiSteps"]},
+        Appearance->None,
+        MenuAppearance->Automatic,
+        MenuStyle->"MoreAbout"],
+       MouseAppearanceTag["LinkHand"]]],
+      LineSpacing->{1.4, 0},ExpressionUUID->
+      "05053b78-362d-4674-a5bd-469b3bb97043"],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      TagBox[
+       ActionMenuBox[
+        FrameBox[Cell[TextData[{
+          "URL",
+          " ",
+          Cell[BoxData[
+           GraphicsBox[
+            {GrayLevel[0.66667], Thickness[0.13], 
+             LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+            AspectRatio->1,
+            ImageSize->20,
+            PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+           "fe85acd5-a003-4c53-88d7-658cd985c3c3"]
+         }],ExpressionUUID->"085b3396-c819-4fd7-8613-0e66d1738b19"],
+         StripOnInput->
+          False], {"\<\"RubiSteps/ref/SubstitutionInformation\"\>":>
+        None, "\<\"Copy Wolfram Documentation Center URL\"\>":>
+        Module[{DocumentationSearch`Private`nb$}, 
+         DocumentationSearch`Private`nb$ = NotebookPut[
+            Notebook[{
+              Cell["RubiSteps/ref/SubstitutionInformation"]}, Visible -> 
+             False]]; SelectionMove[
+          DocumentationSearch`Private`nb$, All, Notebook]; 
+         FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+         NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+        Delimiter, "\<\"Copy web URL\"\>":>
+        Module[{DocumentationSearch`Private`nb$}, 
+         DocumentationSearch`Private`nb$ = NotebookPut[
+            Notebook[{
+              Cell[
+               BoxData[
+                MakeBoxes[
+                 Hyperlink[
+                 "http://reference.wolfram.com/language/RubiSteps/ref/\
+SubstitutionInformation.html"], StandardForm]], "Input", TextClipboardType -> 
+               "PlainText"]}, Visible -> False]]; 
+         SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+         FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+         NotebookClose[DocumentationSearch`Private`nb$]; 
+         Null], "\<\"Go to web URL\"\>":>FrontEndExecute[{
+          NotebookLocate[{
+            URL[If[
+               TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$805161], 
+               "http://reference.wolfram.com/system-modeler/", 
+               "http://reference.wolfram.com/language/"] <> 
+             "RubiSteps/ref/SubstitutionInformation" <> ".html"], None}]}]},
+        Appearance->None,
+        MenuAppearance->Automatic,
+        MenuStyle->"URLMenu"],
+       MouseAppearanceTag["LinkHand"]]],
+      LineSpacing->{1.4, 0},ExpressionUUID->
+      "b0354fe8-618d-4a81-abf0-5fb0618bcf64"]
+    }], "AnchorBar",
+     CacheGraphics->False,ExpressionUUID->
+     "f07c430f-4a04-4efd-8023-1b955ee70d76"]}
+  }]], "AnchorBarGrid",
+ CellID->1,ExpressionUUID->"ef0ce64a-5735-4fb3-b3b1-d6b5cfa7a857"],
+
+Cell["RubiSteps`", "ContextNameCell",ExpressionUUID->"b4d4e910-a274-40ff-95ac-f041ddd78df9"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[GridBox[{
+   {Cell[TextData[{
+     Cell[
+     "SubstitutionInformation", "ObjectName",ExpressionUUID->
+      "c2b31cd3-12d9-42a6-b4a4-db320f78efe5"],
+     Cell[BoxData[
+      TemplateBox[{8},
+       "Spacer1"]],ExpressionUUID->"14752352-12d3-4dfd-9c84-6614c23bf820"],
+     Cell[BoxData[
+     ""], "ObjectNameTranslation",ExpressionUUID->
+      "fe8c1f05-2206-41de-9a67-55ff263c329c"]
+    }],ExpressionUUID->"7b783207-8fa3-4585-8026-22a18add1dc8"], 
+    "\[SpanFromLeft]"}
+  }]], "ObjectNameGrid",ExpressionUUID->"7e0ea74c-e9c3-4119-baef-\
+2fd499ae95ee"],
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     Cell[BoxData["SubstitutionInformation"], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "b83b0674-fd7c-42e6-b25b-ce0818d9d7f9"],
+     "\[LineSeparator]represents substitution rules for expressions. ",
+     Cell[BoxData[
+      TemplateBox[{
+        Cell[
+         TextData["SubstitutionInformation"]], 
+        "paclet:RubiSteps/ref/SubstitutionInformation", 
+        "RubiSteps Package Symbol"},
+       "PackageLink",
+       BaseStyle->"InlineFormula"]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "f07315d2-e3b7-4e2b-b55a-f130c906507e"],
+     " is also an option of ",
+     Cell[BoxData[
+      TemplateBox[{
+        Cell[
+         TextData["ShowIntSteps"]], "paclet:RubiSteps/ref/ShowIntSteps", 
+        "RubiSteps Package Symbol"},
+       "PackageLink",
+       BaseStyle->"InlineFormula"]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "48ca3e07-b6d2-45a5-ba2a-de1d1e9d1752"],
+     "."
+    }],ExpressionUUID->"085826e5-5fc8-42f7-bcaa-1cab902c2ef0"]}
+  }]], "Usage",
+ CellID->1539113359,ExpressionUUID->"a29f2fb0-b6b8-4898-8f41-275bb3e825e6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[Cell[BoxData[
+ ButtonBox[Cell[TextData[{
+   Cell[BoxData[
+    DynamicBox[ToBoxes[
+      If[
+       MatchQ[
+        CurrentValue[
+         EvaluationNotebook[], {TaggingRules, "Openers", "NotesSection"}, 
+         Closed], 
+        Alternatives[Open, True]], 
+       Style[
+        Graphics[{
+          Thickness[0.18], 
+          RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+          Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+         PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+        0.68 Inherited], 
+       Rotate[
+        Style[
+         Graphics[{
+           Thickness[0.18], 
+           RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+           Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+          PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+         0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
+     ImageSizeCache->{17., {0.47500000000000053`, 16.525}}]],ExpressionUUID->
+    "33a3f705-09bf-4d43-9355-1021b782b48d"],
+   Cell[BoxData[
+    TemplateBox[{1},
+     "Spacer1"]],ExpressionUUID->"82ae1aa5-806c-4ec6-83a1-36014acae5e4"],
+   "Details and Options"
+  }], "NotesFrameText",ExpressionUUID->"f5879138-f629-4c0f-a448-d001282f1e48"],
+  Appearance->{Automatic, None, "Normal", Automatic},
+  BaseStyle->None,
+  ButtonFunction:>(FrontEndExecute[{
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], All, ButtonCell], 
+     FrontEndToken["OpenCloseGroup"], 
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], After, CellContents]}]& ),
+  Evaluator->None,
+  Method->
+   "Preemptive"]],ExpressionUUID->"9ea76fff-7fd8-4fd9-be80-eab1f2a3e9f5"]], \
+"NotesSection",
+ WholeCellGroupOpener->True,
+ CellGroupingRules->{"SectionGrouping", 50},
+ CacheGraphics->False,
+ CellID->1215236804,ExpressionUUID->"9194958d-066f-4bdb-9215-6561b2cadce9"],
+
+Cell[TextData[{
+ "This symbol has only ",
+ StyleBox["FormatValues and is also used as an option key", "InlineCode"],
+ "."
+}], "Notes",
+ CellID->1866088930,ExpressionUUID->"bbd26fbf-1c02-4447-8342-2b113eab786c"]
+}, Dynamic[CurrentValue[
+ EvaluationNotebook[], {TaggingRules, "Openers", "NotesSection"}, Closed]]]],
+
+Cell[BoxData[GridBox[{
+   {
+    DynamicBox[FEPrivate`ImportImage[
+      FrontEnd`FileName[{"Documentation", "FooterIcons"}, 
+       "RelatedFunction.png"]],
+     ImageSizeCache->{62.5, {34., 41.}}], GridBox[{
+      {
+       StyleBox[
+        RowBox[{"See", " ", "Also"}], "SeeAlsoSection"]},
+      {Cell[TextData[Cell[BoxData[
+        TemplateBox[{
+          Cell[
+           TextData["ShowIntSteps"]], "paclet:RubiSteps/ref/ShowIntSteps", 
+          "RubiSteps Package Symbol"},
+         "PackageLink",
+         BaseStyle->"InlineFormula"]], "InlineFormula",
+        FontFamily->"Source Sans Pro",ExpressionUUID->
+        "8b16930e-ec60-4b3c-b11b-a0f199d6f02e"]], "SeeAlso",ExpressionUUID->
+        "a0ecbdfd-3ba1-443a-969c-5e9d778eba38"]}
+     }]}
+  }]], "SeeAlsoSection",ExpressionUUID->"008cbd9e-90b5-4f24-a00b-\
+d9cc180906d0"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[GridBox[{
+   {
+    DynamicBox[FEPrivate`ImportImage[
+      FrontEnd`FileName[{"Documentation", "FooterIcons"}, "RelatedGuide.png"]],
+     ImageSizeCache->{62.5, {34., 41.}}], GridBox[{
+      {
+       StyleBox[
+        RowBox[{"Related", " ", "Guides"}], "MoreAboutSection"]},
+      {
+       RowBox[{"\[FilledVerySmallSquare]", Cell[BoxData[
+         TemplateBox[{
+           Cell[
+            TextData["RubiSteps"]], "paclet:RubiSteps/guide/RubiSteps"},
+          "RefLinkPlain",
+          BaseStyle->{"MoreAbout"}]], "MoreAbout",ExpressionUUID->
+         "5f125b0e-1be9-4e16-9908-a247255b35ef"]}]}
+     }]}
+  }]], "MoreAboutSection",ExpressionUUID->"7ff2910b-1555-4138-b966-\
+be547c4f21f2"],
+
+Cell["Metadata", "MetadataSection",
+ CellID->1574429920,ExpressionUUID->"26fd0b66-6c36-478a-a83f-5449d9f39c3f"]
+}, Open  ]],
+
+Cell[" ", "FooterCell",ExpressionUUID->"fb05f80f-9ede-4499-b263-0df095c9ea6c"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{900., 595.5},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
+WindowTitle->"SubstitutionInformation",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "", "LinkTrails" -> "", 
+  "HasOptions" -> True, "ExampleCounter" -> 1, 
+  "Openers" -> {
+   "PrimaryExamplesSection" -> Open, "ExampleSection" -> {"0" -> Open}, 
+    "NotesSection" -> Closed}, "NewStyles" -> True, 
+  "CitationPopupData" -> $Failed, "ShowCitation" -> False, "RootCaptions" -> 
+  "", "Metadata" -> {
+   "built" -> "{2022, 11, 24, 10, 43, 4.189176}", 
+    "history" -> {"", "", "", ""}, "context" -> "RubiSteps`", 
+    "keywords" -> {"RubiSteps"}, "specialkeywords" -> {}, 
+    "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
+    "Rubi Steps Symbol", "language" -> "en", "paclet" -> "RubiSteps", 
+    "status" -> "None", "summary" -> 
+    "SubstitutionInformation represents substitution rules for expressions. \
+SubstitutionInformation is also an option of ShowIntSteps.", "synonyms" -> {},
+     "tabletags" -> {}, "title" -> "SubstitutionInformation", "titlemodifier" -> 
+    "", "windowtitle" -> "SubstitutionInformation", "type" -> "Symbol", "uri" -> 
+    "RubiSteps/ref/SubstitutionInformation"}},
+CellContext->"Global`",
+FrontEndVersion->"13.1 for Linux x86 (64-bit) (2022\:5e746\:670816\:65e5)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> 
+  "13.1 for Linux x86 (64-bit) (2022\:5e746\:670816\:65e5)", StyleDefinitions -> 
+  "Package.nb"],
+ExpressionUUID->"bc176f20-92e4-4d4f-84f6-2e963b2c2967"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[595, 21, 5208, 126, 70, "AnchorBarGrid",ExpressionUUID->"ef0ce64a-5735-4fb3-b3b1-d6b5cfa7a857",
+ CellID->1],
+Cell[5806, 149, 92, 0, 30, "ContextNameCell",ExpressionUUID->"b4d4e910-a274-40ff-95ac-f041ddd78df9"],
+Cell[CellGroupData[{
+Cell[5923, 153, 566, 14, 72, "ObjectNameGrid",ExpressionUUID->"7e0ea74c-e9c3-4119-baef-2fd499ae95ee"],
+Cell[6492, 169, 1188, 29, 138, "Usage",ExpressionUUID->"a29f2fb0-b6b8-4898-8f41-275bb3e825e6",
+ CellID->1539113359]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7717, 203, 1886, 47, 45, "NotesSection",ExpressionUUID->"9194958d-066f-4bdb-9215-6561b2cadce9",
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->1215236804],
+Cell[9606, 252, 210, 5, 70, "Notes",ExpressionUUID->"bbd26fbf-1c02-4447-8342-2b113eab786c",
+ CellID->1866088930]
+}, Dynamic[CurrentValue[EvaluationNotebook[], {TaggingRules, "Openers", "NotesSection"}, Closed]]]],
+Cell[9921, 261, 831, 21, 142, "SeeAlsoSection",ExpressionUUID->"008cbd9e-90b5-4f24-a00b-d9cc180906d0"],
+Cell[CellGroupData[{
+Cell[10777, 286, 704, 18, 142, "MoreAboutSection",ExpressionUUID->"7ff2910b-1555-4138-b966-be547c4f21f2"],
+Cell[11484, 306, 111, 1, 70, "MetadataSection",ExpressionUUID->"26fd0b66-6c36-478a-a83f-5449d9f39c3f",
+ CellID->1574429920]
+}, Open  ]],
+Cell[11610, 310, 78, 0, 70, "FooterCell",ExpressionUUID->"fb05f80f-9ede-4499-b263-0df095c9ea6c"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

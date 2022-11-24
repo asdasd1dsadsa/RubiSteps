@@ -1,5 +1,4 @@
-[![View notebooks](https://wolfr.am/HAAhzkRq)](https://wolfr.am/Tf0XqiXI)
-![](/Package/README.PNG)
+
 
 # Installation
 
@@ -7,9 +6,9 @@
 
 You can execute [this script](/Package/Install.wls) to install [the package file](/Package/RubiSteps.wl), manually also OK.
 
-Note:
+[Documentation(Old ver)](/Package/README.MD)
 
-* The picture above illustrates this version, not the following paclet version.
+Note:
 
 * No longer maintained.
 
@@ -22,6 +21,8 @@ Evaluate the following in Wolfram kernel to install:
 **If** not having a good Internet, try to get the latest paclet file from [here](/Paclets/), and then evaluate:
 
 `PacletInstall["the/path/to/the/file.paclet"]`
+
+Documentation will be found in the documentation center of Mathematica. Usage messages are also helpful.
 
 Note: 
 
@@ -36,3 +37,4 @@ Note:
 # ToDo
 
 * Parentheses for preventing $ax+bx^2--cx^3$ 。
+* Support definite integrals.

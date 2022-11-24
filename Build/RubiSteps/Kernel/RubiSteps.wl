@@ -280,14 +280,16 @@ TeXIntSteps::MaTeXLoadFailMsg::ChineseSimplified =
 	"\:65e0\:6cd5\:52a0\:8f7d MaTeX` \:3002RubiSteps`TeXIntSteps \:9700\:8981 MaTeX` \:3002";
 
 
-TeXIntSteps[expr_, var_, opts___] := Enclose[
+TeXIntSteps[expr_, var_, opts:OptionsPattern[]] := Enclose[
 	(
 		Confirm[Needs@"MaTeX`", TeXIntSteps::MaTeXLoadFailMsg];
 		Construct[Symbol["MaTeX`MaTeX"],
 			ShowIntSteps[
 				expr, var
-			, FormatType -> TeXForm]
-		, opts]
+			, FormatType -> TeXForm
+			, Fold[FilterRules, opts, {Except@Options@Symbol["MaTeX`MaTeX"], Options@ShowIntSteps, Except@FormatType}]
+			]
+		, FilterRules[opts, Options@Symbol["MaTeX`MaTeX"]]]
 	),
 	Message[RubiSteps`GeneralMessage`General::Failure, #]&
 ]

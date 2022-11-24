@@ -2,15 +2,23 @@
 
 Paclet[
 	Name -> "RubiSteps",
-	Version -> "0.0.1",(* API change and paclet-ize *)
+	Version -> "0.0.2",(* opts pass & docs & build *)
 	WolframVersion -> "12.2+",(* Enclose is introduced in 12.2, although not necessary. *)
 	Description -> "Enhancement for Rubi steps.",
+	Creator -> "asdasd1dsadsa",
+	URL -> "https://github.com/asdasd1dsadsa/RubiSteps",
 	Root -> ".",
 	Loading -> Manual,
 	Extensions -> {
 		{
+			"Documentation",
+			"Root" -> "Documentation",
+			"Language" -> All,
+			MainPage -> "Guides/RubiSteps"
+		},
+		{
 			"Kernel",
-			Root -> ".",
+			Root -> "Kernel",
 			Context -> "RubiSteps`"
 		}
 	}
