@@ -22,7 +22,14 @@ SetOptions[DocumentationBuild`DocumentationBuildNotebooks, "BuildSearchIndex" ->
 build = PacletBuild["Source/RubiSteps", "Build/"]
 
 
-PacletDocumentationBuild["Source/RubiSteps", "Build/HTML/", "HTML"]
+oldStyle = Options[$FrontEnd, DefaultStyleDefinitions]
+SetOptions[$FrontEnd, DefaultStyleDefinitions -> "Default.nb"]
+
+
+PacletDocumentationBuild["Source/RubiSteps", "docs/", "HTML"]
+
+
+SetOptions[$FrontEnd, oldStyle]
 
 
 paclet = RenameFile[#, FileNameJoin@{"Paclets", FileNameTake@#}, OverwriteTarget -> True]&@build["PacletArchive"]

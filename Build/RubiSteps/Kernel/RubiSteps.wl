@@ -287,9 +287,9 @@ TeXIntSteps[expr_, var_, opts:OptionsPattern[]] := Enclose[
 			ShowIntSteps[
 				expr, var
 			, FormatType -> TeXForm
-			, Fold[FilterRules, {opts}, {Except@Options@Symbol["MaTeX`MaTeX"], Options@ShowIntSteps, Except@FormatType}]
+			, Fold[FilterRules, opts, {Except@Options@Symbol["MaTeX`MaTeX"], Options@ShowIntSteps, Except@FormatType}]
 			]
-		, FilterRules[{opts}, Options@Symbol["MaTeX`MaTeX"]]]
+		, FilterRules[opts, Options@Symbol["MaTeX`MaTeX"]]]
 	),
 	Message[RubiSteps`GeneralMessage`General::Failure, #]&
 ]
