@@ -1,0 +1,306 @@
+
+		<!DOCTYPE html>
+		<html lang="en">
+
+		<head>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	
+
+<title>ShowIntSteps&mdash;Wolfram Language Documentation</title>
+<meta name="buildnumber" content="0000000">
+<meta name="historydata" content="{, , , }" />
+<meta name="keywords" content=" Integral,  Integrate, Integration,  Rubi,  RubiSteps,  ShowIntSteps" />
+
+<meta name="description" content="ShowIntSteps[expr, var, opts] Show steps of integration of expr over var." />
+<link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
+<script>var baselang = 'ShowIntSteps.en';</script>
+</head>
+
+<body id="ref" class="package">
+  <main class="main">
+  <nav class="topContentWrap"><span class="badge">RUBI STEPS SYMBOL</span><ul class="dropdown">
+   <li>
+    <a href="#" class="menu see-also">See Also</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="../ref/TeXIntSteps.html"><span class="dropdownPad">TeXIntSteps</span></a>
+     </li>
+     <li>
+      <a href="../ref/SubstitutionInformation.html"><span class="dropdownPad">SubstitutionInformation</span></a>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <a href="#" class="menu related-guides">Related Guides</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="../guide/RubiSteps.html"><span class="dropdownPad">RubiSteps</span></a>
+     </li>
+    </ul>
+   </li>
+  </ul></nav><div class="ContextNameCell">RubiSteps`</div><div class="main-heading"><span class="main-title-top">RubiSteps`</span><h1 class="main-title">ShowIntSteps</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
+  <div class="functionIntro">
+   <p class="code">
+    <span class="IF">ShowIntSteps<span class="openbracket">[</span><span class="TI">expr</span><span class="comma">,</span> <span class="TI">var</span><span class="comma">,</span> <span class="TI">opts</span><span class="closebracket">]</span></span>
+   </p>
+   <p class="code-description">Show steps of integration of <span class="TI">expr</span> over <span class="TI">var</span>.</p>
+  </div>
+ </div><section id="DetailsAndOptions"><div class="inner">
+   <h1 class="toggle">Details and Options</h1>
+   <div class="hideable">
+    <ul class="functionList">
+     <li><a name="361513179"></a>The following options can be given: </li>
+     <li class="NotesTable">
+      <a name="302738477"></a>
+      <table>
+       <col width="1%" />
+       <col width="28%" />
+       <col width="28%" />
+       <col width="43%" />
+       <tr class="lineAbove" style=""><td /><td><a href="http://reference.wolfram.com/language/ref/ComplexityFunction.html">ComplexityFunction</a></td><td>StringLength @* ToString</td><td><span class="TT">This option will be passed the call of <a href="http://reference.wolfram.com/language/ref/Simplify.html">Simplify</a> at the last step.</span></td></tr>
+       <tr class="" style=""><td /><td><a href="http://reference.wolfram.com/language/ref/GeneratedParameters.html">GeneratedParameters</a></td><td><a href="http://reference.wolfram.com/language/ref/Automatic.html">Automatic</a></td><td><span class="TT"><span class="specialcharacters">During the integration<span class="comma">,</span> temporary variables for substitution will be generated. This option will specify how these symbols would be named.</span></span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/SubstitutionInformation.html">SubstitutionInformation</a></td><td><a href="http://reference.wolfram.com/language/ref/Automatic.html">Automatic</a></td><td><span class="TT">Here <span class="IF"><a class="package-symbol" href="../ref/SubstitutionInformation.html">SubstitutionInformation</a></span> is an option for specifying how verbose the substitution information in steps you require.</span></td></tr>
+       <tr class="" style=""><td /><td><a href="http://reference.wolfram.com/language/ref/FormatType.html">FormatType</a></td><td><a href="http://reference.wolfram.com/language/ref/StandardForm.html">StandardForm</a></td><td><span class="TT">FormatType specifies what format you want to get as output in.</span></td></tr>
+      </table>
+     </li>
+    </ul>
+   </div>
+  </div></section><section id="Examples"><h1 class="toggle open">Examples</h1><span class="open-all on">open all</span><span class="close-all">close all</span><div class="hideable">
+   <div id="409257714"
+       class="clipboard-input"
+       data-in="In[1]:="
+       data-in-num="1"
+       data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+       data-src="Files/ShowIntSteps.en/I_1.png"
+       data-in-width="120"
+       data-in-height="35"
+       data-link="https://wolfram.com/xid/0cfwkt76b3yc299foyf-g1x3j4"
+       data-code="Files/ShowIntSteps.en/i_1.txt"
+       ></div>
+   <div>
+    <h2 class="toggle open">Basic Examples<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(1)</span></h2>
+    <div class="hideable">
+     <div class="ExampleInitialization" id="1673033661"><a name="1673033661"></a>Needs[&quot;RubiSteps`&quot;]</div>
+     <div id="570948533"
+         class="clipboard-input"
+         data-in="In[1]:="
+         data-in-num="1"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/ShowIntSteps.en/I_2.png"
+         data-in-width="163"
+         data-in-height="44"
+         data-link="https://wolfram.com/xid/0cfwkt76b3yc299foyf-jp7ozr"
+         data-code="Files/ShowIntSteps.en/i_2.txt"
+         ></div>
+     <div class="clipboard-output"
+         data-out="Out[1]="
+         data-out-num="1"
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/ShowIntSteps.en/O_1.png"
+         data-out-width="527"
+         data-out-height="230"
+         ></div>
+    </div>
+   </div>
+   <div>
+    <h2 class="toggle">Options<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(2)</span></h2>
+    <div class="hideable">
+     <div>
+      <h3 class="toggle">FormatType<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(1)</span></h3>
+      <div class="hideable">
+       <p><a name="1475829961"></a>ShowIntSteps supports <span class="InlineCode">TraditionalForm</span> and <span class="InlineCode">StandardForm</span> typesetting:</p>
+       <div id="802491596"
+           class="clipboard-input"
+           data-in="In[1]:="
+           data-in-num="1"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/ShowIntSteps.en/I_3.png"
+           data-in-width="400"
+           data-in-height="36"
+           data-link="https://wolfram.com/xid/0cfwkt76b3yc299foyf-nj2gri"
+           data-code="Files/ShowIntSteps.en/i_3.txt"
+           ></div>
+       <div class="clipboard-output"
+           data-out="Out[1]="
+           data-out-num="1"
+           data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/ShowIntSteps.en/O_2.png"
+           data-out-width="408"
+           data-out-height="217"
+           ></div>
+       <div id="1514941252"
+           class="clipboard-input"
+           data-in="In[2]:="
+           data-in-num="2"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src-swap="Files/ShowIntSteps.en/I_4.png"
+           data-big="410 36"
+           data-small="410 36"
+           data-link="https://wolfram.com/xid/0cfwkt76b3yc299foyf-zb8qfq"
+           data-code="Files/ShowIntSteps.en/i_4.txt"
+           ></div>
+       <div class="clipboard-output"
+           data-out="Out[2]="
+           data-out-num="2"
+           data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/ShowIntSteps.en/O_3.png"
+           data-out-width="440"
+           data-out-height="196"
+           ></div>
+       <p><a name="973041677"></a>Also supports an <span class="InlineCode">InputForm</span>  which is more like original Rubi:</p>
+       <div id="1612355425"
+           class="clipboard-input"
+           data-in="In[3]:="
+           data-in-num="3"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/ShowIntSteps.en/I_5.png"
+           data-in-width="378"
+           data-in-height="36"
+           data-link="https://wolfram.com/xid/0cfwkt76b3yc299foyf-0x8noz"
+           data-code="Files/ShowIntSteps.en/i_5.txt"
+           ></div>
+       <div class="clipboard-output"
+           data-out="Out[3]="
+           data-out-num="3"
+           data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/ShowIntSteps.en/O_4.png"
+           data-out-width="385"
+           data-out-height="214"
+           ></div>
+       <p><a name="1762543747"></a><img src="Files/ShowIntSteps.en/1.png" height="23" width="21" style="vertical-align:middle;" alt="TAdjustmentBox[E, BoxBaselineShift -&gt; 0.5, BoxMargins -&gt; {{-0.3, 0}, {0, 0}}]X" title="TAdjustmentBox[E, BoxBaselineShift -&gt; 0.5, BoxMargins -&gt; {{-0.3, 0}, {0, 0}}]X" /> code can be easily generated:</p>
+       <div id="735279603"
+           class="clipboard-input"
+           data-in="In[4]:="
+           data-in-num="4"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/ShowIntSteps.en/I_6.png"
+           data-in-width="310"
+           data-in-height="36"
+           data-link="https://wolfram.com/xid/0cfwkt76b3yc299foyf-mf1vnp"
+           data-code="Files/ShowIntSteps.en/i_6.txt"
+           ></div>
+       <div class="clipboard-output"
+           data-out="Out[4]="
+           data-out-num="4"
+           data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/ShowIntSteps.en/O_5.png"
+           data-out-width="446"
+           data-out-height="289"
+           ></div>
+      </div>
+     </div>
+     <div>
+      <h3 class="toggle">GeneratedParameters<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(1)</span></h3>
+      <div class="hideable">
+       <p><a name="227283423"></a>Look at the output of <span class="InlineCode">GeneratedParameters -&gt; Identity</span>.</p>
+       <div id="2716461"
+           class="clipboard-input"
+           data-in="In[1]:="
+           data-in-num="1"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src-swap="Files/ShowIntSteps.en/I_7.png"
+           data-big="431 74"
+           data-small="431 74"
+           data-link="https://wolfram.com/xid/0cfwkt76b3yc299foyf-bwibj"
+           data-code="Files/ShowIntSteps.en/i_7.txt"
+           ></div>
+       <div class="clipboard-output"
+           data-out="Out[1]="
+           data-out-num="1"
+           data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/ShowIntSteps.en/O_6.png"
+           data-out-width="526"
+           data-out-height="186"
+           ></div>
+       <p><a name="1069473044"></a>You can see variable substitutions, variable <span class="InlineCode">x</span> is substituted into a function of a variable with the same name <span class="InlineCode">x</span>.</p>
+       <p><a name="542423853"></a>By change the option <span class="InlineCode">GeneratedParameters</span>, naming behavior can be changed:</p>
+       <div id="40797378"
+           class="clipboard-input"
+           data-in="In[2]:="
+           data-in-num="2"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src-swap="Files/ShowIntSteps.en/I_8.png"
+           data-big="445 74"
+           data-small="375 92"
+           data-link="https://wolfram.com/xid/0cfwkt76b3yc299foyf-ykpqs"
+           data-code="Files/ShowIntSteps.en/i_8.txt"
+           ></div>
+       <div class="clipboard-output"
+           data-out="Out[2]="
+           data-out-num="2"
+           data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/ShowIntSteps.en/O_7.png"
+           data-out-width="530"
+           data-out-height="186"
+           ></div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div>
+    <h2 class="toggle">Properties &amp; Relations<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(1)</span></h2>
+    <div class="hideable">
+     <p><a name="1932368633"></a>See <span class="IF"><a class="package-symbol" href="../ref/TeXIntSteps.html">TeXIntSteps</a></span>.</p>
+    </div>
+   </div>
+   <div>
+    <h2 class="toggle">Possible Issues<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(1)</span></h2>
+    <div class="hideable">
+     <p><a name="1898787772"></a>Terms already having a minus sign in a line may be connected with an extra minus sign.</p>
+     <div id="1754148448"
+         class="clipboard-input"
+         data-in="In[1]:="
+         data-in-num="1"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/ShowIntSteps.en/I_9.png"
+         data-in-width="134"
+         data-in-height="40"
+         data-link="https://wolfram.com/xid/0cfwkt76b3yc299foyf-3anrv2"
+         data-code="Files/ShowIntSteps.en/i_9.txt"
+         ></div>
+     <div class="clipboard-output"
+         data-out="Out[1]="
+         data-out-num="1"
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/ShowIntSteps.en/O_8.png"
+         data-out-width="534"
+         data-out-height="94"
+         ></div>
+    </div>
+   </div>
+   <div class="clear"><!-- --></div>
+  </div></section><section id="SeeAlso" class="related-links"><div class="inner">
+   <h1>See Also</h1>
+   <p class="inlineFunctionList"><span class="IF"><a class="package-symbol" href="../ref/TeXIntSteps.html">TeXIntSteps</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="../ref/SubstitutionInformation.html">SubstitutionInformation</a></span></p>
+  </div></section><section id="RelatedGuides" class="related-links"><div class="inner">
+   <h1>Related Guides</h1>
+   <ul class="functionList">
+    <span class="special-character FilledVerySmallSquare">&#9642;</span>
+    <li>
+     <a href="../guide/RubiSteps.html">RubiSteps</a>
+    </li>
+   </ul>
+  </div></section><section id="RelatedLinks" class="related-links"><div class="inner">
+   <h1>Related Links</h1>
+   <ul class="functionList">
+    <li>
+     <img src="Files/ShowIntSteps.en/2.png"
+         height="19"
+         width="17"
+         alt="" />
+     <span class="special-character FilledVerySmallSquare">&#9642;</span>
+     <a href="https://github.com/asdasd1dsadsa/RubiSteps"><img src="Files/ShowIntSteps.en/5.png" height="16" width="3" alt="" />Github Repository</a>
+    </li>
+   </ul>
+  </div></section>
+  
+
+  
+		</main>
+		<div id="_footer-offset"></div>
+		<div id="_footer"></div>
+		<script src="../../common/js/jquery/2.2.4/jquery.min.js"></script><script src="../../common/js/jquery/plugins/hoverintent/1.8.0/hoverintent.min.j2"></script><script src="../../common/js/clipboard/2.0/clipboard.js"></script><script src="../../common/js/clipboard/2.0/code-clipboard.js"></script><script src="../../common/framework/js/body.en.js"></script><script src="../../common/framework/js/head.en.js"></script><script src="../../language-assets/js/dropdowns.js"></script><script src="../../language-assets/js/global.js"></script><script src="../../language-assets/js/language-specific.js.en"></script><script src="../../language-assets/js/language.js"></script><script src="../../language-assets/js/temporary.js"></script><script src="../../language-assets/js/toggles.js"></script><script src="../../language-assets/js/tooltips.js"></script><script src="../../language-assets/js/workflows.js"></script>
+</body>
+</html>

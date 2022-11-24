@@ -1,0 +1,1 @@
+ShowIntSteps[(x^(1/7) + Sqrt[x])/(x^(1/14) + x^(8/7)), x]
