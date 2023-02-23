@@ -2,7 +2,7 @@
 
 Paclet[
 	Name -> "RubiSteps",
-	Version -> "0.0.2",(* opts pass & docs & build *)
+	Version -> "0.0.3",(* Fix a fatal bracket bug *)
 	WolframVersion -> "12.2+",(* Enclose is introduced in 12.2, although not necessary. *)
 	Description -> "Enhancement for Rubi steps.",
 	Creator -> "asdasd1dsadsa",

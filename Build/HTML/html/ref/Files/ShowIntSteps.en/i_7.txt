@@ -1,0 +1,2 @@
+ShowIntSteps[1/(1 + x^6), x, SubstitutionInformation -> None, 
+  FormatType -> InputForm, GeneratedParameters -> Identity] // Column

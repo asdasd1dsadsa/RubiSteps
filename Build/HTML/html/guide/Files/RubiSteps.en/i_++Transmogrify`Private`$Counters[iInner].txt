@@ -1,0 +1,1 @@
+TeXIntSteps[1/(1 + x^6), x, Magnification -> 0.5]
